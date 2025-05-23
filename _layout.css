@@ -24,7 +24,7 @@ header .header.bg-overlay::before {
 }
 
 .header.index.bg-overlay::before {
-    background-image: url(assets/home/empty_street.jpg);
+    background-image: url(empty_street.jpg);
 }
 
 .header.alpha.bg-overlay {
@@ -159,7 +159,7 @@ section.section.features {
 }
 
 .transform-section-bg.bg-overlay::before {
-    background-image: url(assets/home/man_woman_laughing.jpg);
+    background-image: url(man_woman_laughing.jpg);
 }
 
 .transform-section-bg article {
@@ -203,7 +203,7 @@ figure.testimonial-border {
 }
 
 .redefine.bg-overlay::before {
-    background-image: url(assets/home/empty_street.jpg);
+    background-image: url(empty_street.jpg);
 }
 
 .redefine-content {
@@ -222,7 +222,7 @@ figure.testimonial-border {
 }
 
 .transform.bg-overlay::before {
-    background-image: url(assets/home/woman_leading_crowd.jpg);
+    background-image: url(woman_leading_crowd.jpg);
 }
 
 .join-network {
@@ -233,7 +233,7 @@ figure.testimonial-border {
 }
 
 .join-network.bg-overlay::before {
-    background-image: url(assets/home/woman_leading_crowd.jpg);
+    background-image: url(woman_leading_crowd.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,7 +245,7 @@ figure.testimonial-border {
 }
 
 .selfie.bg-overlay::before {
-    background-image: url(assets/home/woman_leading_crowd.jpg);
+    background-image: url(woman_leading_crowd.jpg);
 }
 
 .cta-section {
@@ -263,7 +263,7 @@ section.section.cta.laptop.bg-overlay::before {
 }
 
 .hero-index.bg-overlay::before {
-    background-image: url(assets/home/woman_leading_crowd.jpg);
+    background-image: url(woman_leading_crowd.jpg);
 }
 
 section.section.join-network article {

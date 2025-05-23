@@ -250,7 +250,7 @@
 }
 
     section.section.hero.index.bg-overlay {
-    background-image: url(assets/home/empty_street.jpg);
+    background-image: url(empty_street.jpg);
     background-blend-mode: darken;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,7 +264,7 @@
 
     section.section.hero.index.bg-overlay::before {
         /* display:flex; */
-        background-image: url(assets/home/empty_street.jpg);
+        background-image: url(empty_street.jpg);
         height: auto;
     }
 
