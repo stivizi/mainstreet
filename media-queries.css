@@ -78,7 +78,7 @@
         width: 90%;
         padding: 0;
         position: sticky;
-        margin: 0 auto;
+        margin: 1em auto;
         height: 4vh;
         background-color: black;
         flex-direction: row;
@@ -88,9 +88,23 @@
 
 
     section.section.hero.index {
-        height: 94vh;
-        color: var(--primary-color);
+        /* height: 94vh; */
+        /* color: var(--primary-color); */
     }
+
+    section.section.hero.index.bg-overlay {
+    background-color: var(--overlay-color);
+    /* overflow: hidden; */ /* Prevent overflow from the ken burns effect */
+    /* padding: 0; */
+    height: 94vh;
+    /* width: 100vw; */
+    /* background-size: cover; */
+    position: relative;
+}
+
+    section.section.hero.index.bg-overlay .container {
+    height: 94vh;
+}
 
 
     .alpha.index.hero {
@@ -173,8 +187,11 @@
         flex-wrap: wrap;
         /* padding-top: 4em; */
         gap: var(--gap-extra-large);
+        padding: var(--spacing-extra-large);
+        margin: 0 auto;
+        width: 100vw;
+        margin: 4em 0 2em 0;
         padding: 0;
-        margin: 0;
     }
 
     .features .container {
@@ -190,7 +207,7 @@
     }
 
     .card-text {
-        padding: var(--spacing-small);
+        padding: 0;
         gap: var(--gap-medium);
     }
 
@@ -233,11 +250,19 @@
     gap: var(--gap-medium);
 }
 
-    .kids-club.hero article.content {
+    .alpha-club.hero article.content {
     color: var(--primary-color);
     max-width: 60%;
     gap: var(--gap-medium);
 }
+
+       section.section.hero.index.bg-overlay::before {
+       display:flex;
+       background-image: url(empty_street.jpg);
+       /* height: 100vh; */ /* Set height to 100% to ensure it covers the parent */
+       animation: kenburns-zoom 30s infinite alternate; /* Add ken burns zoom animation */
+       overflow: hidden;
+    }
 
     section.section.hero.about-alpha.bg-overlay {
     background-color: unset;
@@ -249,24 +274,27 @@
     align-items: center;
 }
 
-    section.section.hero.index.bg-overlay {
-    background-image: url(empty_street.jpg);
-    background-blend-mode: darken;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--overlay-color);
-}
-
     section.section.alpha.index.bg-overlay {
-    background-image: url(css/assets/alpha/asian_teen_book_libary_ai.jpg);
+    position:relative;
+    overflow: hidden;
 }
 
-    section.section.hero.index.bg-overlay::before {
-        /* display:flex; */
-        background-image: url(empty_street.jpg);
-        height: auto;
-    }
+    section.section.alpha.index.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(css/assets/alpha/asian_teen_book_libary_ai.jpg);
+    background-blend-mode: darken; /* Assuming darken blend mode is desired */
+    background-position: center; /* Assuming center position is desired */
+    background-repeat: no-repeat; /* Assuming no-repeat is desired */
+    background-size: cover;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+ 
 
     .header.alpha.bg-overlay {
     height: auto;
@@ -309,7 +337,13 @@ article.hero-content.about {
 
     .card {
         flex: 1;
-        max-width: 90%;
+        /* max-width: 90%; */
+        gap: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
 
     h1 {
@@ -330,8 +364,7 @@ article.hero-content.about {
 
     .testimonials-content {
         justify-content: center;
-        gap: var(--gap-large);
-        /* max-width: var(--max-width-testimonial-content); */
+        max-width: var(--max-width-testimonial-content);
     }
 
     .testimonial-border {
@@ -342,106 +375,6 @@ article.hero-content.about {
     li.card {
         flex: 1 1 20%;
     }
-
-.features li.card {
-    border: none;
-}
-
-    section.section.hero.about-alpha.bg-overlay {
-    height: fit-content;
-    background-color: white;
-}
-
-    .header.about-alpha.bg-overlay {
-    height: fit-content;
-}
-
-    section.section.hero.about-alpha.bg-overlay {
-    background-color: unset;
-    padding-bottom: 0;
-}
-
-    .hero .container {
-    height: 93vh;
-    display: flex;
-    align-content: flex-end;
-}
-
-        .nav-wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .index-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: center;
-        gap: var(--gap-small);
-        margin: 0;
-    }
-
-    section.section.quote {
-    background: white;
-}
-
-    .quote h3,
-    .quote p {
-color: black;
-    }
-
-    section.section.kids-club.hero.bg-overlay::before {
-    background-image: url(css/assets/alpha/club/equip_your_child.jpg);
-        height: 100vh;
-}
-
-    section.section.kids-club.hero.bg-overlay {
-    background-color: unset;
-        margin-bottom: 0;
-        padding-bottom: 0;
-}
-
-    section.section.kids-club.hero.bg-overlay {
-    background-position: center;
-    padding: 0;
-    border: 0;
-}
-
-    section.section.kids-club.advantage {
-    background-color: white;
-    border: 0;
-    z-index: 1;
-}
-
-        section.section.kids-club.advantage h3 {
-   color: black;
-}
-
-    section.section.skills {
-    padding: 4em 0;
-}
-
-    li {
-        border-bottom: 1px solid rgb(255 255 255 / 25%);
-        margin-top: 1em;
-        padding-top: 1em;
-        padding-bottom: 6em;
-        padding: 4em 0;
-    }
-
-    .card-text h3 {
-    background-color: unset;
-    width: 100%;
-    padding: 0;
-    margin-top: 0;
-    font-weight: bold;
-    color: var(--primary-color);
-}
 
 .features li.card {
     border: none;
@@ -460,12 +393,13 @@ color: black;
 
 
 hr.display {
-    display: block;
+    display: none;
 }
 
     article.card {
     gap: var(--gap-large);
     max-width: 90%;
+    margin: 0;
 }
 
     
@@ -473,5 +407,89 @@ a.nav-link-join-blue {
     width: fit-content;
 }
 
-        
+    section.section.quote {
+    background-color: var(--primary-color);
+}
+
+    .quote h3,
+    .quote p {
+        color:black;
+    }
+
+.card {
+    width: 90%;
+    margin-bottom: 4em;
+}
+
+.card-text h3 {
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    /* padding: var(--padding-btn); */
+    margin-top: 0;
+    color: var(--primary-color);
+    font-weight: unset;
+}
+
+    section.section.hero.about-alpha.bg-overlay::before {
+    display: flex;
+}
+
+    .header.about-alpha.bg-overlay {
+    height: fit-content;
+}
+
+    section.section.alpha-club.hero.bg-overlay {
+    height: 94vh;
+    position: relative;
+    background-color: unset;
+}
+
+        section.section.alpha-club.hero.bg-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(css/assets/alpha/club/equip_your_child.jpg);
+            background-blend-mode: darken; /* Assuming darken blend mode is desired */
+            background-position: center; /* Assuming center position is desired */
+            background-repeat: no-repeat; /* Assuming no-repeat is desired */
+            background-size: cover;
+            z-index: -1; /* Ensure the pseudo-element is behind the content */
+            /* background-color: ; */ /* Removed incomplete background-color */
+}
+
+    .claim h3 {
+    margin: 0 auto;
+}
+
+    
+.container-cards {
+    margin: 0;
+}
+
+    .section.alpha-club.projects {
+    border-bottom: none;
+}
+
+    ul.card-list li {border-bottom: 1px solid #ffffff40;}
+
+    ul.card-list li.hidden {
+    border-bottom: 0px;
+}
+
+    .alpha-club .container {
+    margin: 0 5% 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+    section.section.cta.laptop.bg-overlay .container {
+    height: 33vh;
+}
+    
 }

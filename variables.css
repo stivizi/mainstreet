@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #ffffff;
+    --primary-color: #DBDBDB;
     --secondary-color: #000000;
-    --primary-button-color: red;
+    --primary-button-color: #ff0000bf;
     --secondary-button-color: rgb(53, 167, 255);
     --overlay-color: rgba(0, 0, 0, 0.5);
     --default-font: sans-serif;

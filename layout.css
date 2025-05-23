@@ -1,4 +1,5 @@
 /* Layout Styles */
+
 .header {
     /* Needed for the pseudo-element positioning */
     margin: 0;
@@ -7,6 +8,13 @@
     width: 100vw;
     z-index: 0; /* Increased z-index to ensure it's above other elements */
     height: 100vh;
+}
+
+    section.section.hero.index.bg-overlay {
+    position: relative;
+    overflow: hidden; /* Prevent overflow from the ken burns effect */
+    background-color: var(--primary-color);
+    color: black;
 }
 
 .header.alpha-club.bg-overlay::before {
@@ -109,12 +117,6 @@ figcaption {
     padding: var(--padding-testimonial-border);
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: black;
-    /* display: none; */
-}
-
 section.section.hero.index::before {
     background-color: var(--primary-color);
     color: black;
@@ -125,10 +127,19 @@ section.section.hero.index::before {
 }
 
 section.section.alpha.index.hero.bg-overlay::before {
-    background-position: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(css/assets/alpha/asian_teen_book_libary_ai.jpg);
+    background-blend-mode: darken; /* Assuming darken blend mode is desired */
+    background-position: center; /* Assuming center position is desired */
+    background-repeat: no-repeat; /* Assuming no-repeat is desired */
     background-size: cover;
-    background-repeat: no-repeat;
-    display: none;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    background-color: var(--overlay-color);
 }
 
 section.section.hero.index .content {
@@ -150,7 +161,7 @@ img.icon {
 section.section.features {
     /* border-bottom: 1px solid var(--primary-color); */
     border-top: 1px solid --primary-color;
-    opacity: 50%;
+    /* opacity: 50%; */
 }
 
 .transform-section-bg {
@@ -182,10 +193,9 @@ section.section.features {
 }
 
 figure.testimonial-border {
-    border: 1px solid --primary-color;
     margin: var(--spacing-small);
     padding: var(--spacing-small);
-    opacity: 50%;
+    border: 1px solid;
 }
 
 .testimonials-content {
@@ -193,7 +203,6 @@ figure.testimonial-border {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
     align-items: center;
 }
 
@@ -279,7 +288,7 @@ section.section.join-network article {
 
 .learn,
 .use,
-.cta.kids-club {
+.cta.alpha-club {
 background-color:black;
 }
 
@@ -287,17 +296,17 @@ background-color:black;
 .projects {}
 
 
-section.section.kids-club.hero.bg-overlay {
-    background-color: white;
-    color: black;
+section.section.alpha-club.hero.bg-overlay {
+    /* background-color: white; */
+    /* color: black; */
 }
 
 
-.section.kids-club {
+.section.alpha-club {
     border-bottom: 1px solid;
 }
 
-section.section.cta.kids-club.bg-overlay {
+section.section.cta.alpha-club.bg-overlay {
     background-image: url(css/assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
     position:relative;
     background-size: cover;
@@ -307,20 +316,27 @@ section.section.cta.kids-club.bg-overlay {
     background-blend-mode: darken;
 }
 
-
-section.section.hero.index.bg-overlay {
-    background-color: white;
-    color: black;
-}
-
-section.section.skills {
-    padding: 0;
-}
-
 section.section.cards {
     padding: 0;
     width: 100%;
     margin: 0 auto;
+}
+
+
+section.section.hero.index.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../empty_street.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    animation: kenburns-zoom 30s infinite alternate; /* Add ken burns zoom animation */
 }
 
 article {
@@ -340,10 +356,10 @@ h1, h2, h3 {
 }
 
 .card-text h3 {
-    background-color: var(--secondary-button-color);
+    background-color: var(--h2-mobile);
     width: 100%;
     padding: var(--padding-btn);
-    margin-top: -1em;
+    margin-top: 0em;
     color: var(--secondary-color);
     font-weight: bold;
 }
@@ -575,8 +591,8 @@ section.section.cta.laptop.bg-overlay {
 }
 
 .container-cards {
-    width: 95%;
-    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -623,15 +639,9 @@ hr.display {
     width: 100%;
 }
 
-.section {
-    margin: 0 auto;
-    align-items: center;
-    padding: var(--spacing-extra-large) 0;
-}
-
 .learn,
 .use,
-.cta.kids-club {
+.cta.alpha-club {
 background-color:black;
 }
 
@@ -639,17 +649,40 @@ background-color:black;
 .projects {}
 
 
-section.section.kids-club.hero.bg-overlay {
+section.section.alpha-club.hero.bg-overlay {
+    background-color: black;
+    color: white;
+}
+
+section.section.alpha-club.hero.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(css/assets/alpha/club/equip_your_child.jpg); /* Assuming this is the correct image */
+    background-blend-mode: darken; /* Assuming darken blend mode is desired */
+    background-position: center; /* Assuming center position is desired */
+    background-repeat: no-repeat; /* Assuming no-repeat is desired */
+    background-size: cover;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+
+.section.alpha-club {
+    border-bottom: 1px solid #ffffff5e;
+}
+
+section.section.alpha-club.advantage {
     background-color: white;
+}
+
+section.section.alpha-club.advantage .claim h3 {
     color: black;
 }
 
-
-.section.kids-club {
-    border-bottom: 1px solid;
-}
-
-section.section.cta.kids-club.bg-overlay {
+section.section.cta.alpha-club.bg-overlay {
     background-image: url(css/assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
     position:relative;
     background-size: cover;
@@ -659,10 +692,10 @@ section.section.cta.kids-club.bg-overlay {
     background-blend-mode: darken;
 }
 
-section.section.hero.index.bg-overlay {
+/* section.section.hero.index.bg-overlay {
     background-color: white;
     color: black;
-}
+} */
 
 section.section.skills {
     padding: 0;
@@ -671,7 +704,7 @@ section.section.skills {
 section.section.cards {
     padding: 0;
     width: 100%;
-    margin: 0 auto;
+    margin: 4em auto;
 }
 
 .cta {
@@ -687,18 +720,15 @@ section.section.cards {
 
 section.section.cta.laptop.bg-overlay {
     position: relative;
+    height: fit-content;
+    overflow: hidden;
+    /* height: 33vh; */
 }
 
 .container-cards article.content {
     padding: 0;
 }
 
-.container-cards {
-    width: 100%;
-    max-width: 1920px;
-    padding: 0;
-    margin: 0 auto;
-}
 
 .become-an-expert {
     position: relative;
@@ -732,4 +762,25 @@ a.nav-link-join-blue {
     width: 100%;
     text-align: center;
     padding: var(--padding-btn);
+}
+
+section.section.hero.about-alpha.bg-overlay::before {
+    display: none;
+}
+
+section.section.alpha-club.hero.bg-overlay::before {
+    position: relative;
+}
+
+
+.claim {
+    max-width: 95%;
+}
+
+.skills .card-image {
+    margin: -10px;
+}
+
+section.section.cta.enroll.bg-overlay {
+    margin-top: 1em;
 }

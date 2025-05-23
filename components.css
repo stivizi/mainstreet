@@ -26,7 +26,7 @@ article.content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
     justify-content: center;
     align-items: center;
     gap: var(--spacing-extra-large);
@@ -205,15 +205,16 @@ section.section.cta.join-network.bg-overlay {
     position: relative; /* Added for positioning ::before */
 }
 
-.cta.kids-club .container {
+.cta.alpha-club .container {
     display: flex;
     align-content: flex-start;
 }
 
-section.section.cta.kids-club.bg-overlay::before {
+section.section.cta.alpha-club.bg-overlay::before {
     background-image: url(css/assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
     /* background-color: #000000; */
     background-position: -400px;
+    animation: none;
 }
 
 section.section.cta.enroll.bg-overlay::before {
@@ -222,13 +223,7 @@ section.section.cta.enroll.bg-overlay::before {
 
 .container-cards article.content {
     padding: 0;
-}
-
-.container-cards {
-    width: 100%;
-    max-width: 1920px;
-    padding: 0;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .become-an-expert {
