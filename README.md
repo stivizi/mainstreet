@@ -8,7 +8,7 @@ This is the web repository for the Mainstreet project.
 - `baseof.html`: Base template for Hugo.
 - `style.css`: Main stylesheet.
 - `about.html`: Page explaining what Mainstreet is.
-- `assets/`: Contains static assets like images and CSS.
+- `css/assets/`: Contains static assets like images and CSS.
 
 ## Getting Started
 

@@ -173,7 +173,7 @@ h2.desktop {
 }
 
 section.section.join {
-    background-image: url(assets/about/brain.jpg);
+    background-image: url(css/assets/about/brain.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,13 +211,13 @@ section.section.cta.join-network.bg-overlay {
 }
 
 section.section.cta.kids-club.bg-overlay::before {
-    background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
+    background-image: url(css/assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
     /* background-color: #000000; */
     background-position: -400px;
 }
 
 section.section.cta.enroll.bg-overlay::before {
-    background-image: url(assets/alpha/network_finger_touch_girl.jpeg);
+    background-image: url(css/assets/alpha/network_finger_touch_girl.jpeg);
 }
 
 .container-cards article.content {
@@ -239,12 +239,12 @@ section.section.cta.enroll.bg-overlay::before {
 }
 
 .become-an-expert.bg-overlay::before {
-    background-image: url(assets/about/become_ai_expert_cyborg.jpg);
+    background-image: url(css/assets/about/become_ai_expert_cyborg.jpg);
     background-position: top;
 }
 
 .enroll .bg-overlay {
-    background-image: url(assets/alpha/network_finger_touch_girl.jpeg);
+    background-image: url(css/assets/alpha/network_finger_touch_girl.jpeg);
 }
 
 section.section.hero.about-alpha.bg-overlay {

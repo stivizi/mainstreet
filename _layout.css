@@ -10,16 +10,16 @@
 }
 
 .header.alpha-club.bg-overlay::before {
-    background-image: url(assets/alpha/club/equip_your_child.jpg);
+    background-image: url(css/assets/alpha/club/equip_your_child.jpg);
     background-position: -1210px;
 }
 
 header .header.bg-overlay::before {
-    background-image: url(assets/alpha/club/networked_brains.jpg);
+    background-image: url(css/assets/alpha/club/networked_brains.jpg);
 }
 
 .header.about.bg-overlay::before {
-    background-image: url(assets/about/cyborg_face_hero_color.jpg);
+    background-image: url(css/assets/about/cyborg_face_hero_color.jpg);
     background-position: left;
 }
 
@@ -36,7 +36,7 @@ header .header.bg-overlay::before {
 }
 
 .header.alpha.bg-overlay::before {
-    background-image: url(assets/alpha/asian_teen_book_libary_ai.jpg);
+    background-image: url(css/assets/alpha/asian_teen_book_libary_ai.jpg);
 }
 
 .header-logo {
@@ -254,7 +254,7 @@ figure.testimonial-border {
 }
 
 section.section.cta.laptop.bg-overlay::before {
-    background-image: url(assets/alpha/teen_two_phones_chat.jpg);
+    background-image: url(css/assets/alpha/teen_two_phones_chat.jpg);
 }
 
 .hero-index {
@@ -298,7 +298,7 @@ section.section.kids-club.hero.bg-overlay {
 }
 
 section.section.cta.kids-club.bg-overlay {
-    background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
+    background-image: url(css/assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
     position:relative;
     background-size: cover;
     background-position: left;
@@ -531,7 +531,7 @@ h2.desktop {
 }
 
 section.section.join {
-    background-image: url(assets/about/brain.jpg);
+    background-image: url(css/assets/about/brain.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -588,7 +588,7 @@ section.section.cta.laptop.bg-overlay {
 }
 
 .become-an-expert.bg-overlay::before {
-    background-image: url(assets/about/become_ai_expert_cyborg.jpg);
+    background-image: url(css/assets/about/become_ai_expert_cyborg.jpg);
     background-position: top;
 }
 
@@ -650,7 +650,7 @@ section.section.kids-club.hero.bg-overlay {
 }
 
 section.section.cta.kids-club.bg-overlay {
-    background-image: url(assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
+    background-image: url(css/assets/alpha/club/teen_futuristic_glasses_future_proof.jpg);
     position:relative;
     background-size: cover;
     background-position: right;
@@ -709,7 +709,7 @@ section.section.cta.laptop.bg-overlay {
 }
 
 .become-an-expert.bg-overlay::before {
-    background-image: url(assets/about/become_ai_expert_cyborg.jpg);
+    background-image: url(css/assets/about/become_ai_expert_cyborg.jpg);
     background-position: top;
 }
 
