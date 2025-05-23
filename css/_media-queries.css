@@ -1,0 +1,477 @@
+@media only screen and (max-width: 1023px) {
+    hr.display {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    article {
+        flex-direction: column;
+        gap: var(--gap-medium);
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-small);
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .thanks .text-content {
+        max-width: none;
+    }
+
+    article {
+        flex-direction: row;
+        gap: var(--gap-medium);
+    }
+
+    li.card {
+        flex: 1 1 40%;
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+
+    .card {
+        flex-direction: row;
+        gap: var(--gap-extra-large);
+        flex: 1 1 40%;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 0 0 5px;
+        margin: 0;
+        flex: 0;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 85vw;
+        min-height: auto;
+        padding-bottom: 5px;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: max-content;
+        gap: var(--gap-large);
+        margin-bottom: 3px;
+        flex-wrap: wrap;
+    }
+
+    .header-content {
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
+        background: black;
+        width: 90%;
+        padding: 0;
+        position: sticky;
+        margin: 0 auto;
+        height: 4vh;
+        background-color: black;
+        flex-direction: row;
+        max-width: 1920px;
+    }
+
+
+
+    section.section.hero.index {
+        height: 94vh;
+        color: var(--primary-color);
+    }
+
+
+    .alpha.index.hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url(assets/alpha/asian_teen_book_libary_ai.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+
+    a.nav-link, a.nav-link-join {
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    a.nav-link-join {
+        background: none;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+        color: var(--secondary-button-color);
+    }
+
+    a.nav-link:hover, a.nav-link-join:hover {
+        text-decoration: underline;
+    }
+
+    a.nav-link-join:hover {
+        color: var(--primary-color);
+        text-decoration-color: var(--secondary-button-color);
+    }
+
+
+    .index-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap-large);
+    }
+
+    .image-content.flip {
+        order: 1;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-image {
+        max-width: 40%;
+    }
+
+    .card.flip .card-image {
+        order: 1;
+    }
+
+    ul.card-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* padding-top: 4em; */
+        gap: var(--gap-extra-large);
+        padding: 0;
+        margin: 0;
+    }
+
+    .features .container {
+        min-height: auto;
+    }
+
+    .max-width {
+        max-width: 75%;
+    }
+
+    .hero-index {
+        height: 95vh;
+    }
+
+    .card-text {
+        padding: var(--spacing-small);
+        gap: var(--gap-medium);
+    }
+
+
+    .header.alpha.bg-overlay::before {
+    background: none;
+}
+
+    .header.bg-overlay::before {
+    display: none;
+}
+
+    .hero.about-alpha.bg-overlay::before {
+    background-image: url(assets/alpha/teen_crowd_selfie_outside_mixed_race.jpg);
+    height: 100vh;
+}
+
+    .header.bg-overlay {
+    height: auto;
+    padding: 1em 0;
+}
+
+    section.section.join.bg-overlay {
+    height: 100vh;
+}
+
+    .thanks article.content {
+    background-color: var(--overlay-color);
+    width: 100%;
+    padding: var(--spacing-small);
+}
+
+    hr.hide {
+    display: block;
+}
+
+    .hero article.content {
+    color: var(--primary-color);
+    /* max-width: 60%; */
+    gap: var(--gap-medium);
+}
+
+    .kids-club.hero article.content {
+    color: var(--primary-color);
+    max-width: 60%;
+    gap: var(--gap-medium);
+}
+
+    section.section.hero.about-alpha.bg-overlay {
+    background-color: unset;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+    section.section.hero.index.bg-overlay {
+    background-image: url(assets/home/empty_street.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--overlay-color);
+}
+
+    section.section.alpha.index.bg-overlay {
+    background-image: url(assets/alpha/asian_teen_book_libary_ai.jpg);
+}
+
+    section.section.hero.index.bg-overlay::before {
+        /* display:flex; */
+        background-image: url(assets/home/empty_street.jpg);
+        height: auto;
+    }
+
+    .header.alpha.bg-overlay {
+    height: auto;
+}
+
+    .header-logo img {
+    display: block;
+}
+
+    
+article.hero-content.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+    img {
+    width: 100%;
+    min-height: fit-content;
+}
+
+      .index-content {
+        display: flex;
+        justify-content: center;
+        /* min-height: 88vh; */
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .card-list {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--gap-large);
+    }
+
+    .card {
+        flex: 1;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .full-width h2 {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+    .testimonials-content {
+        justify-content: center;
+        gap: var(--gap-large);
+        /* max-width: var(--max-width-testimonial-content); */
+    }
+
+    .testimonial-border {
+        flex: 1;
+        max-width: none;
+    }
+
+    li.card {
+        flex: 1 1 20%;
+    }
+
+.features li.card {
+    border: none;
+}
+
+    section.section.hero.about-alpha.bg-overlay {
+    height: fit-content;
+    background-color: white;
+}
+
+    .header.about-alpha.bg-overlay {
+    height: fit-content;
+}
+
+    section.section.hero.about-alpha.bg-overlay {
+    background-color: unset;
+    padding-bottom: 0;
+}
+
+    .hero .container {
+    height: 93vh;
+    display: flex;
+    align-content: flex-end;
+}
+
+        .nav-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .index-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        gap: var(--gap-small);
+        margin: 0;
+    }
+
+    section.section.quote {
+    background: white;
+}
+
+    .quote h3,
+    .quote p {
+color: black;
+    }
+
+    section.section.kids-club.hero.bg-overlay::before {
+    background-image: url(assets/alpha/club/equip_your_child.jpg);
+        height: 100vh;
+}
+
+    section.section.kids-club.hero.bg-overlay {
+    background-color: unset;
+        margin-bottom: 0;
+        padding-bottom: 0;
+}
+
+    section.section.kids-club.hero.bg-overlay {
+    background-position: center;
+    padding: 0;
+    border: 0;
+}
+
+    section.section.kids-club.advantage {
+    background-color: white;
+    border: 0;
+    z-index: 1;
+}
+
+        section.section.kids-club.advantage h3 {
+   color: black;
+}
+
+    section.section.skills {
+    padding: 4em 0;
+}
+
+    li {
+        border-bottom: 1px solid rgb(255 255 255 / 25%);
+        margin-top: 1em;
+        padding-top: 1em;
+        padding-bottom: 6em;
+        padding: 4em 0;
+    }
+
+    .card-text h3 {
+    background-color: unset;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.features li.card {
+    border: none;
+}
+
+
+
+
+.full-width h2 {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+
+
+hr.display {
+    display: block;
+}
+
+    article.card {
+    gap: var(--gap-large);
+    max-width: 90%;
+}
+
+    
+a.nav-link-join-blue {
+    width: fit-content;
+}
+
+        
+}
